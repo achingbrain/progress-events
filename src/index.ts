@@ -1,4 +1,3 @@
-
 /**
  * Progress events are emitted during long running operations
  */
@@ -20,13 +19,14 @@ export interface ProgressEvent<T extends string = any, D = unknown> {
  * events passed to `progress` callbacks.
  */
 export class CustomProgressEvent<D = unknown, T extends string = any> extends Event implements ProgressEvent<T, D> {
-  // @ts-expect-error type is a property of Event, we just declare it here for use as a type disambiguator
   public type: T
   public detail: D
 
-  constructor (type: T, detail?: any) {
+  constructor (type: T, detail?: D) {
     super(type)
 
+    this.type = type
+    // @ts-expect-error detail may be undefined
     this.detail = detail
   }
 }
