@@ -8,8 +8,8 @@ describe('progress', () => {
     const type = 'event-type'
     const detail = 'event-detail'
 
-    const event = new CustomProgressEvent<number>(type, detail)
-
+    const event = new CustomProgressEvent<string>(type, detail)
+console.info('wat', event)
     expect(event).to.have.property('type', type)
     expect(event).to.have.property('detail', detail)
   })
