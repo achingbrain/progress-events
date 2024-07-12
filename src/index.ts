@@ -48,5 +48,5 @@ export class CustomProgressEvent<D = unknown, T extends string = any> extends Ev
  * ```
  */
 export interface ProgressOptions<Event extends ProgressEvent = any> {
-  onProgress?: (evt: Event) => void
+  onProgress?(evt: Event): void
 }
