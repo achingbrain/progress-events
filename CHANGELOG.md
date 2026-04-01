@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/achingbrain/progress-events/compare/v1.0.2...v1.1.0) (2026-04-01)
+
+### Features
+
+* expose listener interface type ([#15](https://github.com/achingbrain/progress-events/issues/15)) ([3dfa347](https://github.com/achingbrain/progress-events/commit/3dfa347ab3d4c93fa1bdf9b4e79d69b72ebefdb2))
+
 ## [1.0.2](https://github.com/achingbrain/progress-events/compare/v1.0.1...v1.0.2) (2026-04-01)
 
 ### Dependencies
