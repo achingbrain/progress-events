@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/achingbrain/progress-events/compare/v1.0.1...v1.0.2) (2026-04-01)
+
+### Dependencies
+
+* **dev:** bump aegir from 40.0.13 to 44.0.1 ([#14](https://github.com/achingbrain/progress-events/issues/14)) ([0df6262](https://github.com/achingbrain/progress-events/commit/0df62627cfbc2e6cf507c11a93ced96718444cc2))
+
 ## [1.0.1](https://github.com/achingbrain/progress-events/compare/v1.0.0...v1.0.1) (2024-07-10)
 
 
