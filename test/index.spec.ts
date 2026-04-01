@@ -1,7 +1,5 @@
-/* eslint-env mocha */
-
 import { expect } from 'aegir/chai'
-import { CustomProgressEvent } from '../src/index.js'
+import { CustomProgressEvent } from '../src/index.ts'
 
 describe('progress', () => {
   it('should have type and detail properties', async () => {
