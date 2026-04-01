@@ -14,6 +14,13 @@ export interface ProgressEvent<T extends string = any, D = unknown> {
 }
 
 /**
+ * A callback function that receives progress events
+ */
+export interface ProgressEventListener<E extends ProgressEvent = any> {
+  (evt: E): void
+}
+
+/**
  * An implementation of the ProgressEvent interface, this is essentially
  * a typed `CustomEvent` with a `type` property that lets us disambiguate
  * events passed to `progress` callbacks.
@@ -48,5 +55,5 @@ export class CustomProgressEvent<D = unknown, T extends string = any> extends Ev
  * ```
  */
 export interface ProgressOptions<Event extends ProgressEvent = any> {
-  onProgress?(evt: Event): void
+  onProgress?: ProgressEventListener<Event>
 }
