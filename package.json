@@ -135,6 +135,7 @@
     "test:firefox": "aegir test -t browser -- --browser firefox",
     "test:firefox-webworker": "aegir test -t webworker -- --browser firefox",
     "dep-check": "aegir dep-check",
+    "spell-check": "aegir spell-check",
     "release": "aegir release",
     "docs": "aegir docs"
   },
